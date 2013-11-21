@@ -1,0 +1,99 @@
+body{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.navbar,
+.navbar-inverse{
+	/* background: #fff; */
+	border: none;
+	/* padding: 5px 0; */
+}
+
+a.navbar-brand{
+	background: url(../img/logo.png) no-repeat;
+	display: inline-block;
+	font-size: 0;
+	height: 80px;
+	line-height: 500px;
+	width: 126px;
+}
+
+.navbar-collapse{
+	/* padding: 15px 0; */
+}
+
+
+.jumbotron{
+  background: url(../img/promo.png) center center no-repeat;
+  background-size: cover;
+}
+
+.sequence-container{
+    padding-top: 80px;
+}
+
+.sequence-container  hr {
+    margin-bottom: 80px;
+}
+
+.sequence-container h1{
+    color: #a4a4a4;
+    font-size: 21px;
+    font-weight: 200;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.sequence-container h2{
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.footer{
+    background: #bbb;
+    color: #fff;
+    font-size: 11px;
+    margin-top: 50px;
+    padding: 10px 0 20px 0;
+}
+
+.footer .container{
+    position: relative;
+}
+.footer .container .social{
+    position: absolute;
+    right: 10px;
+    top: -5px;
+}
+
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+}
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .jumbotron{
+      background: url(../img/promo-mobile-hd.png) center center no-repeat;
+      background-size: cover;
+    }
+}
+ 
+
+ /* Landscape phones and down */
+@media (max-width: 480px) {
+    .jumbotron{
+      background: url(../img/promo.png) center center no-repeat;
+      background-size: cover;
+    }
+}
