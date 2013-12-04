@@ -24,6 +24,20 @@ a.navbar-brand{
 	/* padding: 15px 0; */
 }
 
+.navbar-toggle{
+    border-color: #ccc;
+}
+.navbar-toggle .icon-bar{
+    background: #ccc;
+}
+
+.navbar-nav{
+    margin-top: 15px;
+}
+.navbar-form{
+    margin-top: 21px;
+}
+
 
 .jumbotron{
   background: url(../img/promo.png) center center no-repeat;
