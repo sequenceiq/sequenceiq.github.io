@@ -17,6 +17,7 @@ body { margin: 0; }
 .summit h2 { font-family: 'Roboto', Arial, serif; font-weight: 400; color: #fff; font-size: 21px; line-height: 170%; margin: 35px 0 10px 0; }
 .summit h2 a { background: #777; color: #fff; text-decoration: none; padding: 2px 5px;}
 .summit h2 a:hover { background: #aaa;}
+.summit hr { opacity: 0; margin: 0}
 
 .hire-wrapper { background: #ffa72a; }
 .hire { width: 720px; margin: 0 auto; padding: 1px 20px 40px 20px; text-align: center; }
@@ -37,3 +38,4 @@ body { margin: 0; }
 .careers .body .btn {  -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px;
 							display: inline; width: 100px; padding: 20px 25px; background: #777; color: #fff; font-family: 'Roboto', Arial, serif; font-weight: 400; color: #fff; font-size: 22px; line-height: 24px; text-transform: none; text-decoration: none;   }
 .careers .body .btn:hover { background: #aaa; }
+.social-thumbnail { text-decoration: blink; }
