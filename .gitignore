@@ -5,6 +5,7 @@
 .pygments-cache
 .idea/
 _deploy
+.iml
 public
 sass.old
 source.old
