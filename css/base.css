@@ -1,5 +1,5 @@
 
-body { margin: 0; }
+body { margin: 0; padding-left: 0  !important;padding-right: 0px !important;margin-left: 10px;margin-right: 10px;}
 
 .header-wrapper { background: #004455; }
 .masthead { width: 720px; margin: 0 auto; padding: 40px 20px 30px 20px; }
