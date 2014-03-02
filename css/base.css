@@ -40,5 +40,5 @@ body { margin: 0; padding-left: 0  !important;padding-right: 0px !important;marg
 							display: inline; width: 100px; padding: 20px 25px; background: #777; color: #fff; font-family: 'Roboto', Arial, serif; font-weight: 400; color: #fff; font-size: 22px; line-height: 24px; text-transform: none; text-decoration: none;   }
 .careers .body .btn:hover { background: #aaa; }
 .social-thumbnail { text-decoration: blink; }
-.social-link {background-color: #37abc8 !important; border: 0px !important;}
+.social-link {background-color: #37abc8 !important; border: 0px !important;color:#fff !important}
 .social-link:hover { background: #aaa !important; }
