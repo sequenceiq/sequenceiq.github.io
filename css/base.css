@@ -3,10 +3,11 @@ body { margin: 0; padding-left: 0  !important;padding-right: 0px !important;marg
 
 .header-wrapper { background: #004455; }
 .masthead { width: 720px; margin: 0 auto; padding: 40px 20px 30px 20px; }
-.masthead .slogan { font-family: 'Roboto', Arial, serif; font-weight: 100; color: #fff; font-size: 23px; text-transform: uppercase; padding-left: 220px}
+.masthead .slogan { font-family: 'Roboto', Arial, serif; font-weight: 100; color: #fff; font-size: 23px; text-transform: uppercase; padding-left: 230px}
+.masthead>a>img {padding-left: 10px;}
 
 .body-wrapper { background: #fff; clear: both; }
-.body { width: 720px; margin: 0 auto; padding: 5px 20px; text-align: center; }
+.body { width: 720px; padding-top: 20px !important; margin: 0 auto; padding: 5px 20px; text-align: center; }
 .body h1 { font-family: 'Roboto Condensed', Arial, serif; font-weight: 300; color: #ffa72a; font-size: 62px; text-transform: uppercase; }
 .body p { font-family: 'Roboto', Arial, serif; font-weight: 400; color: #004455; font-size: 21px; line-height: 200%;  }
 .body a.thumbnail img { opacity: 0.6; }
@@ -24,7 +25,7 @@ body { margin: 0; padding-left: 0  !important;padding-right: 0px !important;marg
 .hire h2 { font-family: 'Roboto Condensed', Arial, serif; font-weight: 400; color: #fff; font-size: 52px; line-height: 52px; text-transform: uppercase; margin: 30px 0 50px 0; }
 .hire .btn {  -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px;
 							display: inline; width: 100px; padding: 20px 25px; background: #777; color: #fff; font-family: 'Roboto Condensed', Arial, serif; font-weight: 400; color: #fff; font-size: 32px; line-height: 30px; text-transform: uppercase; text-decoration: none;   }
-.hire .btn:hover { background: #aaa; }
+.hire .btn:hover { background: #aaa; color: #fff !important}
 
 .footer-wrapper { background: #fff; }
 .mastfoot { width: 720px; margin: 0 auto; padding: 20px; text-align: center; font-family: 'Roboto', Arial, serif; font-weight: 400; color: #37abc8; font-size: 15px; line-height: 200%;}
@@ -39,3 +40,5 @@ body { margin: 0; padding-left: 0  !important;padding-right: 0px !important;marg
 							display: inline; width: 100px; padding: 20px 25px; background: #777; color: #fff; font-family: 'Roboto', Arial, serif; font-weight: 400; color: #fff; font-size: 22px; line-height: 24px; text-transform: none; text-decoration: none;   }
 .careers .body .btn:hover { background: #aaa; }
 .social-thumbnail { text-decoration: blink; }
+.social-link {background-color: #37abc8 !important; border: 0px !important;}
+.social-link:hover { background: #aaa !important; }
