@@ -3,7 +3,7 @@ body { margin: 0; padding-left: 0  !important;padding-right: 0px !important;marg
 
 .header-wrapper { background: #004455; }
 .masthead { width: 720px; margin: 0 auto; padding: 40px 20px 30px 20px; }
-.masthead .slogan { font-family: 'Roboto', Arial, serif; font-weight: 100; color: #fff; font-size: 23px; text-transform: uppercase; }
+.masthead .slogan { font-family: 'Roboto', Arial, serif; font-weight: 100; color: #fff; font-size: 23px; text-transform: uppercase; padding-left: 220px}
 
 .body-wrapper { background: #fff; clear: both; }
 .body { width: 720px; margin: 0 auto; padding: 5px 20px; text-align: center; }
