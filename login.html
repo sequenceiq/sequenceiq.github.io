@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <!-- <link rel="shortcut icon" href="img/ico/favicon.ico"> -->
 
-    <title>SequenceIQ</title>
+    <title>Login / Sign Up : SequenceIQ</title>
 
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=latin-ext' rel='stylesheet' type='text/css'>
@@ -17,7 +17,7 @@
     <link href="css/screen.css" rel="stylesheet">
 		<link href="css/jquery.sidr.sequenceiq.css" rel="stylesheet">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  
+		  
   </head>
 
   <body>
@@ -28,61 +28,57 @@
 				<div class="container">
 					<a href="index.html"><img id="logo" src="img/logo.png" alt="SequenceIQ"></a>
 					<div id="mobile-menu">
-						<a class="btn-inv-bordered" id="menu-btn" href="#btn-inv-bordered" title="MENU"><img src="img/menu-btn.png"></a>
+						<a class="btn-inv-bordered" id="menu-btn" href="#menu-btn" title="MENU"><img src="img/menu-btn.png"></a>
 					</div><!-- #mobile-menu -->	
 					<div id="menu">
 						<nav>
 							<ul>
-								<li id="homelink" class="active"><a href="index.html">Home</a></li>
+								<li id="homelink"><a href="index.html">Home</a></li>
 								<li><a href="products.html">Products</a></li>
 								<li><a href="services.html">Services</a></li>
 								<li><a href="about.html">About</a></li>
 								<li><a href="http://blog.sequenceiq.com/">Blog</a></li>
-								<li><a href="login.html">Login/Sign Up</a></li>
+								<li class="active"><a href="login.html">Login/Sign Up</a></li>
 							</ul>
 						</nav>
 					</div><!-- #menu -->
+					
 				</div><!-- .container -->			  
+				
 			</header>
 			
-			<section id="intro-1">
+			<section id="intro-login">
 				<div class="container">
-					<article class="col-txt">
-						<h2>Transform your data into knowledge with Machine Learning</h2>
-						<p>Enterprises and application developers use SequenceIQ APIs to build predictive applications and turn data into a tangible asset at real time by using our large set of configurable ML algorithms – at scale.</p>	
-						<p class="btn-row"><a href="products.html" class="btn-inv btn-left">Learn how</a> <a href="login.html" class="btn btn-left">Sign up for beta access</a></p>
-					</article><!-- .col-txt --> 
-					<div class="col-img">
-						<img src="img/homepic1.png">	
-					</div><!-- .col-img --> 
+					<h1>Login / Sign Up</h1>
 				</div><!-- .container -->   
-			</section><!-- #intro-1 -->
-	
-			<section id="intro-2">
-				<div class="container">
-					<div class="col-img">
-						<img src="img/homepic2.png">
-					</div><!-- .col-img --> 
-					<article class="col-txt">
-						<h2>Turn your data into actionable insights</h2>
-						<p>SequenceIQ APIs transforms data into business value by allowing to configure rules, actions and raise notifications based on the results of the ML algorithms.</p>
-						<p class="btn-row"><a href="products.html" class="btn-inv btn-left">Learn how</a> <a href="login.html" class="btn btn-left">Request a demo</a></p>
-					</article><!-- .col-txt --> 
-				</div><!-- .container -->   
-			</section><!-- #intro-2 -->
+			</section><!-- #intro-login -->
 			
-			<section id="intro-3">
-				<div class="container">
+			<section id="login">
+				<div class="container">					
 					<article class="col-txt">
-						<h2>Open source and open platform</h2>
-						<p>We believe that open source platforms encourages research and progress and is a cost effective way to deploy big data solutions in the cloud or on-premise - at your choice.</p>	
-						<p class="btn-row"><a href="http://docs.spacetimeapi.apiary.io/" class="btn-bordered btn-left">Visit our API</a> <a href="http://github.com/sequenceiq" class="btn-bordered btn-left">Visit our GitHub page</a></p>
+						<h2>Login</h2>
+						<form action="">
+							<p><input type="email" id="login-email" placeholder="Email" required></p>
+							<p><input type="password" placeholder="Password" required><a href="#" id="btn-forgot" class="btn-bordered btn-right btn-frm-aside" title="Forgot your password?">?</a></p>
+							<p class="btn-row"><a href="#" class="btn-inv btn-left">Login</a></p>
+						</form>
+					</article><!-- .col-txt -->
+					<article class="col-txt">
+						<h2>Sign up for Beta Program</h2>
+						<form action="">
+							<p><input type="text" placeholder="Your name" required></p>
+							<p><input type="text" placeholder="Company" required></p>
+							<p><input type="tel" placeholder="Phone" required></p>
+							<p><input type="checkbox">  I'd like to have technical support/help</p>
+							<p class="error"><input type="email" placeholder="Email" required><span>Invalid email address. Enter a valid email address or leave</span></p>
+							<p><input type="password" placeholder="Password" required></p>
+							<p><input type="password" placeholder="Repeat password" required></p>
+							<p class="footnote">By signing up for an account, you agree that you have read our <a href="PP.html">Privacy Policy</a> and accept our <a href="tos.html">Terms of Use</a>.</p>
+							<p class="btn-row"><a href="#" class="btn-inv btn-left">Sign up</a></p>
+						</form>
 					</article><!-- .col-txt --> 
-					<div class="col-img">
-						<img src="img/homepic3.png">	
-					</div><!-- .col-img --> 
 				</div><!-- .container -->   
-			</section><!-- #intro-3 -->
+			</section><!-- #login -->
 	
 			<footer>  
 				<div class="container">
@@ -99,13 +95,23 @@
 				</div><!-- .container -->  		
 			</footer>
 					
-		</div><!-- .page --> 
-  	
+		</div><!-- .page -->
+		
+		<div class="modal-panel" id="modal-panel-forgot">
+			<form action="">
+				<h3>Forgot your password?</h3>
+				<p>Reset your password by getting a new one to your email address. After logging in with it, you need to change this temporary password.</p>
+				<p><input type="email" id="forgot-email" placeholder="Email" required></p>
+				<p class="btn-row"><a href="#" class="btn-inv btn-left">Get new password</a></p>
+			</form>
+		</div><!-- #modal-panel-forgot -->
+		
   	<!-- JS load -->
     <script src="lib/jquery-1.11.0.min.js" type="text/javascript"></script>
 		<script src="lib/jquery.sidr.min.js" type="text/javascript"></script>
 		<script src="lib/jquery.touchwipe.min.js" type="text/javascript"></script>  
     <script src="lib/retina.js" type="text/javascript"></script>
+    <script src="lib/jquery.simplemodal.1.4.4.min.js" type="text/javascript"></script>
     
 		<script type="text/javascript">
 			$(document).ready(function() {
@@ -119,7 +125,12 @@
 					wipeRight: function() {
 						$.sidr('close', 'menu');
 					},
-				preventDefaultEvents: false
+					preventDefaultEvents: false
+				});
+				$('#btn-forgot').click(function (e) {
+					$('#forgot-email').val($('#login-email').val());
+					$('#modal-panel-forgot').modal();
+					return false;
 				});
 			});
 		</script>     
