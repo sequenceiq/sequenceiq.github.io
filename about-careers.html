@@ -20,11 +20,30 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+      <style>
+          footer a:hover {
+              color: #f3a536 !important;
+          }
+
+          html,body {
+              height: 100%;
+              /* The html and body elements cannot have any padding or margin. */
+          }
+
+          /* Wrapper for page content to push down footer */
+          #wrap {
+              min-height: 100%;
+              height: auto !important;
+              height: 100%;
+              /* Negative indent footer by it's height */
+              margin: 0 auto -60px;
+          }
+      </style>
 		  
   </head>
 
   <body>
-  
+    <div id="wrap">
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   			<div class="container">
   				
@@ -61,10 +80,10 @@
 			<section id="about-selector">
 				<div class="container">
 					<div class="btn-group btn-group-justified">
-						<a href="about.html" class="btn btn-default">The team</a>
-						<a href="about-careers.html" class="btn btn-primary">Careers</a>
-						<a href="about-events.html" class="btn btn-default">Events</a>
-						<a href="about-contact.html" class="btn btn-default">Contact</a>
+                        <a href="about.html" class="btn btn-primary" style="border-right: 0px">The team</a>
+                        <a href="about-careers.html" class="btn btn-default" style="border-right: 0px">Careers</a>
+                        <a href="about-events.html" class="btn btn-default" style="border-right: 0px">Events</a>
+                        <a href="about-contact.html" class="btn btn-default">Contact</a>
 					</div><!-- .btn-group -->
 				</div><!-- .container -->
 			</section><!-- #about-selector -->
@@ -77,35 +96,35 @@
 							<p>If so come help us shape the future of applications built on Big Data.</p>
 						</div><!-- .col-md-6 -->
 						<div class="col-md-6" id="openpos">
-							<h2>Open Positions</h2>
+							<h2 style="margin-top: 0px;">Open Positions</h2>
 							<p><a href="career01.html"><i class="fa fa-info-circle"></i> <strong>Full stack developer</strong> – Data engineering team, Budapest</a></p>
 							<p><a href="career02.html"><i class="fa fa-info-circle"></i> <strong>Application Developer</strong> – Applications team, Budapest</a></p>
 							<p><a href="career03.html"><i class="fa fa-info-circle"></i> <strong>Data scientist</strong> – Research team, Budapest</a></p>
 						</div><!-- .col-md-6 -->
 					</div><!-- .row -->
 					<div class="row">
-						<div class="col-md-6">	
+						<div class="col-md-12">
 							<p class="footnote"><strong>To all recruitment agencies:</strong> SequenceIQ does not accept agency resumes without an agreement. Please do not forward resumes to our jobs alias or SequenceIQ employees. We are not responsible for any fees related to unsolicited resumes.</p>
 						</div><!-- .col-md-6 -->
 					</div><!-- .row -->
 				</div><!-- .container -->   
 			</section><!-- about-careers -->
-			
+    </div>
 			<footer>  
 				<div class="container">
 					<div class="row">
 					<div class="col-md-6">
 						<div class="row">
-							<div class="col-xs-3">
+							<div class="col-xs-1">
 								<a class="" href="http://github.com/sequenceiq" title="Github Profile"><i class="fa fa-github fa-lg"></i></a>
 							</div><!-- .col-xs-3 -->
-							<div class="col-xs-3">
+							<div class="col-xs-1">
 								<a class="" href="http://linkedin.com/company/sequenceiq" title="Linkedin Profile"><i class="fa fa-linkedin fa-lg"></i></a>
 							</div><!-- .col-xs-3 -->
-							<div class="col-xs-3">
+							<div class="col-xs-1">
 								<a class="" href="http://twitter.com/sequenceiq" title="Twitter Profile"><i class="fa fa-twitter fa-lg"></i></a>
 							</div><!-- .col-xs-3 -->
-							<div class="col-xs-3">
+							<div class="col-xs-1">
 								<a class="" href="http://facebook.com/sequenceiq" title="Facebook Profile"><i class="fa fa-facebook fa-lg"></i></a>
 							</div><!-- .col-xs-3 -->
 						</div><!-- .row -->
