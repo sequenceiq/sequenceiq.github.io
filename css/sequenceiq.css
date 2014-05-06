@@ -40,7 +40,7 @@
 }
 
 footer {
-    margin-top: 3%;
+    margin-top: 3% !important;
 }
 
 footer a:hover {
