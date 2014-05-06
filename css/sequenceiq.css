@@ -39,6 +39,10 @@
     margin: 0px;
 }
 
+footer {
+    margin-top: 3%;
+}
+
 footer a:hover {
     color: #f3a536 !important;
 }
