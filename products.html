@@ -96,7 +96,7 @@
                     It is a cloud agnostic and cost effictive Hadoop As-a-Service platform API. Provides automatic scaling, secure multi tenancy and full cloud
                     lifecycle management.</p>
 
-                <p>The benefits of the Cloudbreak platform are listed below:</p>
+                <p>The building blocks of the Cloudbreak platform are spread across three different layers:</p>
             </div>
             <!-- .col-md-6 -->
         </div>
@@ -104,12 +104,9 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="panel panel-info">
-                    <div class="panel-heading"><strong class="panel-title">Secure</strong></div>
+                    <div class="panel-heading"><strong class="panel-title">Infrastructure</strong></div>
                     <div class="panel-body">
-                        Supports a token based and OAuth2 authentication model. The cluster is provisioned in a logically isolated network (Virtual Private Cloud) of your favorite cloud provider. 
-                        If the cluster is launched in a VPC network, the framework configures firewall settings that control the network access of your launched instances. 
-                        For example a Hadoop Resource Manager can be accessed from the internet, whereas none of the other nodes are available. 
-                        Cloudbreak does not store or manages your cloud credentials - it is the end user's responsibility to link Cloudbreak with her/his cloud account. 
+                        Supports a cloud based and an on-premise deployment running on physical hardware, different virtualizations and Docker containers.
                     </div>
                 </div>
                 <!-- .panel -->
@@ -117,38 +114,21 @@
             <!-- .col-md-4 -->
             <div class="col-md-4">
                 <div class="panel panel-info">
-                    <div class="panel-heading"><strong class="panel-title">Elastic</strong></div>
+                    <div class="panel-heading"><strong class="panel-title">Data Fabric</strong></div>
                     <div class="panel-body">
-                        Cloudbreak API can provision an arbitrary number of Hadoop nodes - the API does the hard work and span up the cluster, configure the networks and the selected Hadoop services without any interaction. 
-                        POST once and use it anytime after.
+                        Breaks the data silos created by different departments and allows of building 'data lakes', offering a centralized view on different
+                        underlying datasources.
+                    </div>
                 </div>
                 <!-- .panel -->
             </div>
             <!-- .col-md-4 -->
             <div class="col-md-4">
                 <div class="panel panel-info">
-                    <div class="panel-heading"><strong class="panel-title">Scalable</strong></div>
+                    <div class="panel-heading"><strong class="panel-title">Data insights</strong></div>
                     <div class="panel-body">
-                    As the workload changes, the API allows you to add or remove nodes on the fly. Cloudbreak does the hard work of reconfiguring the infrastructure, provision or decommission Hadoop nodes and let the cluster be continuously operational. 
-                    Once provisioned, new nodes will take up the load and increase the cluster throughput.
+                        Allows enterprises to run machine learning, map-reduce jobs and data processing pipelines to access data insights.
                     </div>
-                </div>
-                <!-- .panel -->
-            </div>
-             <!-- .col-md-4 -->
-            <div class="col-md-4">
-                <div class="panel panel-info">
-                    <div class="panel-heading"><strong class="panel-title">Blueprints</strong></div>
-                    <div class="panel-body">
-                        Supports different Hadoop cluster blueprints. Hostgroups defined in blueprints can be associated to different VPC subnets and availability zones, thus you can span up a cluster for deploying highly available applications.
-                <!-- .panel -->
-            </div>
-             <!-- .col-md-4 -->
-            <div class="col-md-4">
-                <div class="panel panel-info">
-                    <div class="panel-heading"><strong class="panel-title">Flexible</strong></div>
-                    <div class="panel-body">
-                        Allows the option to choose the favorite cloud provider and different pricing models. The API translated the calls towards different cloud vendors - uses one common API, no need to rewrite the code when changing between cloud providers.
                 </div>
                 <!-- .panel -->
             </div>
