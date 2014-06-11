@@ -1,3 +1,6 @@
+// main: ../../_bootstrap/less/bootstrap.sequenceiq.com.less
+
+
 //
 // Variables
 // --------------------------------------------------
@@ -692,9 +695,9 @@
 @panel-success-border:        @state-success-border;
 @panel-success-heading-bg:    @state-success-bg;
 
-@panel-info-text:             @state-info-text;
-@panel-info-border:           @state-info-border;
-@panel-info-heading-bg:       @state-info-bg;
+@panel-info-text:             @brand-success;
+@panel-info-border:           lighten(@brand-success, 30%);
+@panel-info-heading-bg:       #fff;
 
 @panel-warning-text:          @state-warning-text;
 @panel-warning-border:        @state-warning-border;
@@ -844,6 +847,9 @@
 // ...................... SequenceIQ website ................................ //
 
 body { border-top: @navbar-height solid @brand-primary; }
+// sticky footer
+html { position: relative; min-height: 100% !important; }
+body { margin-bottom: 5em !important; }	// height of footer
 
 /*
 .navbar-header {
@@ -856,54 +862,71 @@ body { border-top: @navbar-height solid @brand-primary; }
 */
 .navbar-fixed-top { background-color: @brand-primary-transparent; }
 .navbar-toggle {
-    padding: 7px 8px;
-    .icon-bar {
-      height: 3px;
-      width: 16px;
-      border-radius: 0;
-    }
-  }
+	padding: 7px 8px;
+	.icon-bar {
+		height: 3px;
+		width: 16px;
+		border-radius: 0;
+	}
+}
 .navbar-nav {
 	margin-top: 0; 
 	li a { border-top: 1px solid rgba(255,255,255,0.3);
 		@media (min-width: @grid-float-breakpoint-max) { border-top: none; }
-		}
 	}
+}
 
 p, li, .panel, .btn { 
 	@media (min-width: @screen-phone) { font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-	}
+}
 p a { font-weight: bold; }
 .btn { margin-bottom: @padding-large-vertical; }
 h1 a { 
 	color: @body-bg;
 	&:before { content: "‹"; }
-	}
+}
 	
 #home-intro-1, .intro-subpage { background: @brand-success; color: @body-bg; }
 #home-intro-2 { background: @brand-info; color: @body-bg; }
 [id*='home-intro-'], .intro-subpage, #about-selector { 
 	padding-top: @padding-xl-vertical; padding-bottom: @padding-base-vertical; 
 	@media (min-width: @grid-float-breakpoint-max) { padding-top: @padding-xxl-vertical; padding-bottom: @padding-xl-vertical; }
-	}
+}
 [id*='home-intro-'] h2, .intro-subpage h1 { margin-top: 0; font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; text-transform: uppercase; }
 #products { 
 	padding-bottom: @padding-xl-vertical;
-	h2 { padding-top: @padding-large-vertical; padding-bottom: @padding-large-vertical; font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 400; color: @brand-info;  }
-	h2 span { font-weight: 700; text-transform: uppercase; color: @brand-success; }
+	h2 { padding-top: @padding-large-vertical; padding-bottom: @padding-large-vertical; 
+		font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: @font-size-h1;
+		font-weight: 300; color: @brand-info; text-transform: uppercase;  
 	}
-#services { padding-top: @padding-xxl-vertical; padding-bottom: @padding-large-vertical; }
+	h2 span { color: @brand-success; }
+	h3 { font-weight: 700; }
+}
+#services { padding-bottom: @padding-xl-vertical;
+	h3 { color: @brand-info; }
+}
 #about-selector { padding-bottom: @padding-xl-vertical; }
 
-.card { 
-	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif; padding-top: @padding-large-vertical; margin: 0 auto @padding-xl-vertical auto;
+.card {
+	position: relative;
+	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	padding-top: @padding-large-vertical; margin: 0 auto @padding-xl-vertical auto;
 	.caption { padding: @padding-base-vertical @padding-base-horizontal 0; color: @body-bg; width: 100%;
-			h3 { font-weight: 300; text-transform: uppercase; margin: 0 0 @padding-base-vertical 0; }
+			h3 { font-weight: 300; text-transform: uppercase; margin: 0 0 @padding-base-vertical 0;
+				a { color: @body-bg;
+					&:hover { color: @brand-primary; }
+				}
+			}
 			h4 { margin: @padding-small-vertical 0 @padding-small-vertical 0; font-size: @font-size-base; }
 			h5 { font-weight: 300; margin: 0 0 @padding-large-vertical 0; font-size: @font-size-base; }
-			a { color: @body-bg; }
-		}
 	}
+	p.corner { position: absolute; bottom: 0em; right: 1em;
+		a { color: @body-bg;
+			&:hover { color: @brand-primary; }
+		};
+	}
+}
 #about-team {
 	padding-top: @padding-large-vertical; padding-bottom: @padding-large-vertical;
 	.card { width: 200px; height: 310px; background: @brand-info;
@@ -917,7 +940,7 @@ h1 a {
 		.caption {
 			padding-top: @padding-large-vertical; background: @brand-success; position: absolute; top: 80px; 
 			p { font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 130%; font-weight: 300; }
-			}		
+		}		
 	}
 }
 #about-careers, #about-contact, #login { padding-bottom: @padding-xl-vertical; }
@@ -935,11 +958,16 @@ h1 a {
 p.btn-row { @media (min-width: @grid-float-breakpoint-max) { padding-top: @padding-large-vertical; } }
 p.footnote { font-size: @font-size-xs; }
 
-[class*='col-'] img { margin-bottom: @padding-xl-vertical; }
+[class*='col-'] img { margin-bottom: @line-height-computed; }
 
-footer { 
+footer {
+	position: absolute; left: 0; 
+	bottom: 0; 
+	width: 100%; overflow:hidden; height: 5em;		// sticky footer
 	background: @brand-primary; color: @body-bg; padding-top: @padding-large-vertical; 
 	.row .row { padding-bottom: @padding-large-vertical; }
 	p { font-size: @font-size-xs; }
-	a { color: @body-bg; }
+	a { color: @body-bg;
+		&:hover { color: @brand-info; }
 	}
+}
