@@ -885,7 +885,39 @@ h1 a {
 	color: @body-bg;
 	&:before { content: "‹"; }
 }
-	
+
+#home-hortonworks { 
+	background-color: #69be28;
+	h2 { padding-top: 50px; 
+		@media (max-width: @screen-md-min) { padding-top: 0px; }
+		margin-top: 0px;
+		font-family: "Cabin", sans-serif;
+		font-size: 60px;
+		@media (max-width: @screen-sm-min) { font-size: 50px; }
+		@media (max-width: @screen-xs-min) { font-size: 40px; }
+		font-weight: 400; color: #fff;  
+	}
+	.btn-primary { 
+		background: #25530b;
+		&:hover {
+			background-color: darken(#25530b, 50%);	
+		}
+		border-color: none;
+		height: 45px;
+		font-family: "Cabin", sans-serif;
+		font-size: 14px;
+		font-weight: 400; color: #fff; text-transform: uppercase;
+		padding-left: 30px; padding-right: 30px; padding-top: 8px;
+	}
+	p.btn-row {
+    padding-top: 8px; margin-bottom: 50px;
+	}
+	img { margin-top: 60px; margin-left: 30px;
+		@media (max-width: @screen-md-min) { margin-left: 0px; }
+	}
+}
+
+
 #home-intro-1, .intro-subpage { background: @brand-success; color: @body-bg; }
 #home-intro-2 { background: @brand-info; color: @body-bg; }
 [id*='home-intro-'], .intro-subpage, #about-selector { 
